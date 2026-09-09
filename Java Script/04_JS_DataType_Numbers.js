@@ -94,4 +94,4 @@ console.log(randomNum2); // Output: a random number between 1 and 100
 
 //OR
 
-console.log(Math.floor(Math.random() * 100) + 1); // Output: a random number between 1 and 100
+console.log(Math.floor(Math.random() * 100) + 1); // Output: a random number between 1 and 100  
