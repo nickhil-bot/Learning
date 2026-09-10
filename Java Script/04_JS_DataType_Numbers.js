@@ -95,3 +95,30 @@ console.log(randomNum2); // Output: a random number between 1 and 100
 //OR
 
 console.log(Math.floor(Math.random() * 100) + 1); // Output: a random number between 1 and 100  
+
+
+//generate random number between 2.3 and 7.5
+let min = 2.3;
+let max = 7.5;
+let randomNum3 = Math.random() * (max - min) + min;
+console.log(randomNum3); // Output: a random number between 2.3 and 7.5
+
+//another way to generate random number between 2.3 and 7.5
+let randomNum4 = Math.floor(Math.random() * (max - min + 1)) + min;
+console.log(randomNum4.toFixed(1)); // Output: a random number between 2.3 and 7.5 (rounded to 1 decimal place)
+
+
+//gentate a number between 0 - 100 but it should be in a progessive
+let progressiveNum = Math.floor(Math.random() * 21)*5; // output: a random number between 0 and 100 in progressive (0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100)
+console.log(progressiveNum); // Output: a random number between 0 and 100 in progressive (0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100)
+
+
+
+//6 genrate a random adhar number (12 digit) in js
+let randomAadhar = Math.floor(Math.random() * 900000000000) + 100000000000; // output: a random 12 digit number
+console.log(randomAadhar); // Output: a random 12 digit number
+
+//another way to generate a random 12 digit number
+let randomAadhar2 = Math.floor(Math.random() * 900000000000) + 100000000000;
+console.log(randomAadhar2); 
+
