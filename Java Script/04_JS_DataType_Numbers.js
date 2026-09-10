@@ -97,6 +97,70 @@ console.log(randomNum2); // Output: a random number between 1 and 100
 console.log(Math.floor(Math.random() * 100) + 1); // Output: a random number between 1 and 100  
 
 
+
+/*------------------------------------------------------------------------------------------------------------------------------------*/
+//Q1 create a random mobile number
+
+//Data that we get from the question -->
+//assuming the phone number is indian --> digits
+//indian number gets started with 6 7 8 9
+//now we will split the phone numner in 2 parts
+//First digits = 6, 7, 8, 9
+//Remeaning =
+
+let firstDigit = Math.floor(Math.random()*4)+6
+//0-0.9999
+//0-4.999
+//0.4
+console.log(firstDigit)
+//now i have starting number
+let Remaining_Numbers = Math.floor(Math.random()*1000000000)
+//math.random --> 0-0.9
+//if multiple by 10 --> 0-9.999
+//100 - > 0-99.99
+//1000-> 999.999
+console.log(firstDigit,Remaining_Numbers)
+//6 775510257
+//6 964722464
+/*----------------------------------*/
+
+
+//2 Problem -genrate a program to simulate the throe of dice
+
+//genrate a random number between 1 and 6
+
+
+let dice_1 = Math.floor(Math.random()*6)+1
+
+//0 -0.9999
+
+//0-5.99999  -
+//after round 
+// 0-6 
+
+// lowest - > 0*6 =>0
+// highest -> 0.9 *6 => 5.4
+
+// 0 -5
+
+//1 -6
+
+console.log(dice_1)
+
+/*----------------------------------*/
+
+
+// 3general formula to tackel math.random problem 
+// genearte min between  max 
+//Math.floor(Math.random()*(max-min+1)+min)
+//example-->
+// genrate a number between 50 - 175 
+let Partical_number = Math.floor(Math.random()*(175-50+1)+50)
+console.log(Partical_number)
+
+/*----------------------------------*/
+
+
 //generate random number between 2.3 and 7.5
 let min = 2.3;
 let max = 7.5;
