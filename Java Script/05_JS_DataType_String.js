@@ -32,7 +32,7 @@ console.log(ex_sre_4.length)
 
 // In string the charcters are stored in indexes 
 
-/**
+/*
  *              0123 
  * let string = name 
  * 
@@ -82,5 +82,20 @@ console.log(fullName_1)
 // THIS METHOD IS ONLY POSSIBLE IF YOU DELACRE A STRING WITH BACKTICKS
 
 let fullName_backtick = `my fullname is ' ${firstName} ${middleName} ${lastName} '`
-
 console.log(fullName_backtick)
+
+//------------------------------------------------------------------------------
+
+
+//**** Note *******
+//String are immutable in JS
+
+/* 
+* It means once a string is created, the character in it cannot be changes or modified
+* it any methord that seems to modify a tring actually, returms a new string of chainhing the orignal 
+*/
+
+//Example--> 1 toUpperCase90 --> this methord will convert your string to uppercase (latters/Alphabates)
+
+let Meth_str_1 = "Hello i am BAtman"
+console.log (Meth_str_1.toUpperCase())
