@@ -262,3 +262,97 @@ console.log(py_str2) // hello i am leanrning java and java is a very intersting 
 
 
 
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+//indexOf() --> this will give you the index of the given character of the string
+//Note--> this will only give the first intance of the index
+
+console.log(basic_str.indexOf("a"))
+
+//lastIndexOf()-->this method is used to replace all the instances of the character in string
+//// this will only give the last instacne of the index
+console.log(basic_str.lastIndexOf("a"))
+
+
+// startsWith() --> this will verify if your string strat with a paricular character or not 
+// the retrun type is boolean
+
+let name_fn ="hello my name is xyz"
+
+console.log(name_fn.startsWith("h"))
+// it cases senstive method
+
+
+//endsWith() --> this will verify if your string ending with a paricular character or not 
+console.log(name_fn.endsWith("z"))
+
+
+//-------------------------------------------------------------
+
+/**
+ * match ->
+ * matchALL()->
+ * split()-> array 
+ * 
+ */
+
+
+
+// problem statement -> 
+
+// remove all the spaces form the given string 
+
+
+let space_str = " hello this is a session for string method used i need to spaces for this string "
+
+let reomved_space = space_str.replaceAll(" ","")
+
+console.log(reomved_space)
+//hellothisisasessionforstringmethodusedineedtospacesforthisstring
+
+
+//trim() -> this will remove strat and ends space 
+
+// let space_remove = space_str.trim()
+// console.log(space_remove)
+
+let str__2 = "hello_my_name_is_siddhant"
+
+
+// now replace this _ with ""
+
+
+
+
+// write a program to generate a random aplhabet everytime 
+
+// number 
+// random ()
+// string 
+// string propetry 
+// string varaible retired 
+let no_underscore_str = str__2.replaceAll("_", "")
+console.log(no_underscore_str) // hellomynameissiddhant
+
+// ------------------------------------------------------------
+// PROBLEM 3 -> write a program to generate a RANDOM alphabet every time
+// ------------------------------------------------------------
+
+// hints we got from previous sessions ->
+// number          -> Math.random() gives a random decimal between 0 and 1 (0 included, 1 NOT included)
+// string property -> .length (total characters)
+// string indexing -> str[index] to pick one character
+// string variable -> we store all alphabets in a string
+
+// step 1 : string of all alphabets
+let alphabets = "abcdefghijklmnopqrstuvwxyz"
+// step 2 : generate a random index between 0 and alphabets.length - 1
+let random_index = Math.floor(Math.random() * alphabets.length)
+// step 3 : pick the character at that random index
+let random_alphabet = alphabets[random_index]
+
+console.log(random_index)    // e.g. 14 (a NEW random number every time you run)
+console.log(random_alphabet) // e.g. "o" (a NEW random alphabet every time you run)
