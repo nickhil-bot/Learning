@@ -73,3 +73,76 @@ console.log(Exam_array); // Output: ["John", 2, 654654, "hello", true, null, und
 //4. Deleting elements from an array
 delete Exam_array[1];
 console.log(Exam_array); // Output: ["John", empty, 654654, "hello", true, null, undefined, "new element"]
+
+
+
+
+//------------------------------------------------------------------------------------//
+
+//Methods of array
+
+//when we use any methord we get 2 things
+//1. output --> result of action performed by the method (if the method performs an action)
+//2. Return type --> the data type of recieved output (if the method returns a value)
+
+let fruits = ["apple", "banana", "cherry", "date", "elderberry"]
+
+// Addation of array elements
+
+//1. push() method --> adds one or more elements to the end of an array and returns the new length of the array.
+//syntax--> array.push(element1, element2, ..., elementN)
+let newLength = fruits.push("fig", "grape")// Output: 7
+console.log(fruits);// Output: ["apple", "banana", "cherry", "date", "elderberry", "fig", "grape"]
+
+//or
+
+fruits.push("kiwi", "lemon")
+console.log(fruits) //o
+// Output: ["apple", "banana", "cherry", "date", "elderberry", "kiwi", "lemon"]
+//retutrn type --> array 
+
+
+//2. unshift() method -->  this methord will add a element ar the start of an array and returns the new length of the array.
+//syntax--> array.unshift(element1, element2, ..., elementN)
+let newLength2 = fruits.unshift("mango", "nectarine")
+console.log(fruits)
+// Output: ["mango", "nectarine", "apple", "banana", "cherry", "date", "elderberry", "kiwi", "lemon"]
+//retutrn type --> array , why array because it will return the new length of the array which is a number in this case.
+
+//or
+
+fruits.unshift("orange", "papaya")
+console.log(fruits)
+// Output: ["orange", "papaya", "mango", "nectarine", "apple", "banana", "cherry", "date", "elderberry", "kiwi", "lemon"]
+//retutrn type --> array, why array because it will return the new length of the array which is a number in this case.
+
+//3. pop() method --> removes the last element from an array and returns that element. This method changes the length of the array.
+//syntax--> array.pop()
+let lastElement = fruits.pop()
+console.log(lastElement) // Output: "lemon"
+console.log(fruits) // Output: ["mango", "nectarine", "apple", "banana", "cherry", "date", "elderberry", "kiwi"]
+//retutrn type --> string
+
+//OR
+
+fruits.pop()
+console.log(fruits)
+// Output: ["orange", "papaya", "mango", "nectarine", "apple", "banana", "cherry", "date", "elderberry", "kiwi"]
+//retutrn type --> string, why string because it will return the last element of the array which is a string in this case.
+
+//4. shift() method --> removes the first element from an array and returns that removed element. This method changes the length of the array.
+//syntax--> array.shift()
+let firstElement = fruits.shift()
+console.log(firstElement) // Output: "mango"
+console.log(fruits); // Output: ["nectarine", "apple", "banana", "cherry", "date", "elderberry", "kiwi"]
+//retutrn type --> string   
+
+//OR
+
+fruits.shift();
+console.log(fruits);
+// Output: ["papaya", "mango", "nectarine", "apple", "banana", "cherry", "date", "elderberry", "kiwi"]
+//retutrn type --> string, why string because it will return the first element of the array which is a string in this case.
+
+
+
