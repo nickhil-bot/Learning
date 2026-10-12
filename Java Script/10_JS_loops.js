@@ -144,3 +144,78 @@ for(let i=0; i<=10; i++){ //here we are using for loop to iterate through each n
     }
     console.log(i) //if the number is not equal to 5, we will print the number
 }
+
+//write a loop to find the longest word in the string and print it 
+let str4 = "hello i am in space" //here we are using for loop to iterate through each word in the string and find the longest word
+let words = str4.split(" ") //here we are splitting the string into an array of words using split method
+let longestWord = "" //here we are initializing the longestWord variable to an empty string because we want to find the longest word
+for(let i=0; i<words.length; i++){ //here we are using for loop to iterate through each word in the array
+    if(words[i].length > longestWord.length){ //here we are checking if the length of the current word is greater than the length of the longest word
+        longestWord = words[i] //here we are assigning the current word to the longestWord variable
+    }
+}
+console.log(longestWord) //here we are printing the longest word
+
+//in same above program we will print secound longest word and secound smallest word in the string
+let secondLongestWord = "" //here we are initializing the secondLongestWord variable to an empty string because we want to find the second longest word
+for(let i=0; i<words.length; i++){ //here we are using for loop to iterate through each word in the array
+    if(words[i].length > secondLongestWord.length && words[i].length < longestWord.length){ //here we are checking if the length of the current word is greater than the length of the second longest word and less than the length of the longest word
+        secondLongestWord = words[i] //here we are assigning the current word to the secondLongestWord variable
+    }
+    console.log(secondLongestWord) //here we are printing the second longest word
+}
+
+
+//now in same progrem  we will print smallest word in the string
+let str5 = "hello i am in space" //here we are using for loop to iterate through each word in the string and find the smallest word
+let words1 = str5.split(" ") //here we are splitting the string into an array of words using split method
+let smallestWord = words1[0] //here we are initializing the smallestWord variable to the first word in the array because we want to find the smallest word
+for(let i=1; i<words1.length; i++){ //here we are using for loop to iterate through each word in the array
+    if(words1[i].length < smallestWord.length){ //here we are checking if the length of the current word is less than the length of the smallest word
+        smallestWord = words1[i] //here we are assigning the current word to the smallestWord variable
+    }
+}
+console.log(smallestWord) //here we are printing the smallest word
+
+
+// reverse this given number
+
+let num1 = 123456789 //here we are using while loop to reverse the given number
+let reversedNum = 0 //here we are initializing the reversedNum variable to 0 because we want to store the reversed number
+while(num1 > 0){ //here we are using while loop to iterate through each digit of the number
+    let digit = num1 % 10 //here we are getting the last digit of the number using modulus operator
+    reversedNum = reversedNum * 10 + digit //here we are multiplying the reversedNum by 10 and adding the last digit to it
+    num1 = Math.floor(num1 / 10) //here we are removing the last digit from the number using floor division
+}
+
+//using for loop to reverse the given number
+let num2 = 123456789 //here we are using for loop to reverse the given number
+let reversedNum1 = 0 //here we are initializing the reversedNum variable to 0 because we want to store the reversed number
+for(; num2 > 0;){ //here we are using for loop to iterate through each digit of the number
+    let digit = num2 % 10 //here we are getting the last digit of the number using modulus operator
+    reversedNum1 = reversedNum1 * 10 + digit //here we are multiplying the reversedNum by 10 and adding the last digit to it
+    num2 = Math.floor(num2 / 10) //here we are removing the last digit from the number using floor division
+}
+console.log(reversedNum1) //here we are printing the reversed number
+
+//using string method to reverse the given number
+let num3 = 123456789 //here we are using string method to reverse the given number
+let reversedNum2 = num3.toString().split("").reverse().join("") //here we are converting the number to string, splitting it into an array of characters, reversing the array, and joining it back to a string
+console.log(reversedNum2) //here we are printing the reversed number
+
+
+//example--> to find the second longest word in the string
+let str6 = "hello my countyr is india wowo  "  //here we are using for loop to iterate through each word in the string and find the second longest word
+let words2 = str6.split(" ") //here we are splitting the string into an array of words using split method
+let longestWord1 = "" //here we are initializing the longestWord variable to an empty string because we want to find the longest word
+let secondLongestWord1 = "" //here we are initializing the secondLongestWord variable to an empty string because we want to find the second longest word    
+for(let i=0; i<words2.length; i++){ //here we are using for loop to iterate through each word in the array
+    if(words2[i].length > longestWord1.length){ //here we are checking if the length of the current word is greater than the length of the longest word
+        secondLongestWord1 = longestWord1 //here we are assigning the longestWord to the secondLongestWord variable
+        longestWord1 = words2[i] //here we are assigning the current word to the longestWord variable
+    } else if(words2[i].length > secondLongestWord1.length && words2[i].length < longestWord1.length){ //here we are checking if the length of the current word is greater than the length of the second longest word and less than the length of the longest word
+        secondLongestWord1 = words2[i] //here we are assigning the current word to the secondLongestWord variable
+    }
+}
+console.log(secondLongestWord1) //here we are printing the second longest word
+

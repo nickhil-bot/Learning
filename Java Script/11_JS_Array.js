@@ -145,4 +145,5 @@ console.log(fruits);
 //retutrn type --> string, why string because it will return the first element of the array which is a string in this case.
 
 
-
+//4. shift()
+ 
