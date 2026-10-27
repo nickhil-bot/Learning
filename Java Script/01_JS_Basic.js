@@ -32,7 +32,7 @@ Comment should be clear and concise
 //Vaiables -->>
 //Variables are used to store data values
 //In JS we use var, let and const to declare variables 
-//var --> var is used to declare a value that can be updare in the future
+//var --> var is used to declare a value that can be updare in the future(can use same variable name)
 //let --> let is used to declare a variable in JS
 //const --> const is used to declare a variable in JS which cannot be changed
 
