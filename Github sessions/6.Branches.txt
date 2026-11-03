@@ -1,0 +1,45 @@
+Branches in git   --> used in git to avoide data loss of conflict issue
+
+pull request --> the request we genrate to merge the code to main is called as pull request(PR)
+
+// how to create a branch
+---> a exact copy of a main branch is called branch 
+
+
+// how to create a pull request
+ 
+ step1-->
+git fetch
+git pull origin main
+ 
+ step2-->
+ we have 2 option to create branch 
+1. from github ui
+-->go to github ui
+-->click on branch
+-->click on new branch
+-->enter branch name
+-->select source and click on create
+
+//issue 
+*ui will change platform
+*you need to manualy change
+
+2.From terminal--> Prefer this option
+git featch
+git pull origin main
+git checkout -b 'Branch name'   ***thid is used to create a new branch (-b) this indaicate new branch
+get checkout 'Branchname' --> this is used to tavel in the  branches 
+
+
+
+// how to push code in the branch
+git add.
+git commit -m "message"
+git push origin 'Branchname'
+
+/**when ever your rasing a pull request raise it in the ui
+
+add proper title
+add all reviewer
+add assigne to yourself

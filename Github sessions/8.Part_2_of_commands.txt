@@ -1,0 +1,17 @@
+git reset
+git clean -f
+git reflog
+git blame
+git restore
+
+//git clean -f       -->this command will delete all untrack file 
+//get reset        -->this will bring back file from 
+//get reset filename/path -->this will bring back file that one file from staging to untrack
+
+//git restore  --> this will discard all the changes 
+
+//git blame --> this is used to check who has changed which line
+
+//git relog --> it show a map or history
+
+

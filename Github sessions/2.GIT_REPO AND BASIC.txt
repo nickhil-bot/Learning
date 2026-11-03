@@ -1,0 +1,42 @@
+git init   ----> it instiall all the Related config for git 
+git add .  ----> this command add all the files to the stagging area (git) 
+git commit -m "first commit" ----> this is command used to tag the message for changes upload
+git branch -M main ----> this command create a master branch
+git remote add origin https://github.com/nickhil-bot/First_Repo.git  ----> this is a path or location were code is uploaded
+git push -u origin main ----> this commands push all the change to github
+
+
+//to update the changes in the repo used this command 
+git add. --> add all the file
+git commit -m "first commit" --> adds check points
+git push -u origin main --> pushes files to github
+
+
+
+// ******Difference between git and git add . *******
+
+// git add file_name -----> this used to add only the specific file changes
+// git add. ---> this used to add all the updated changes in all the file
+
+
+
+when ever we push a file to github through then files goes through 3 env
+ // 1. Working directory -----> local folder
+ // 2. Stagging area     -----> Between local and github (Self Review)
+ // 3. Production        -----> github
+
+How file travel through this path
+--> CHANGES       -->GIT ADD.      -->COMMIT -M "Message"      -->GO LIVE ON github
+//Local Folder    -->GIT STAGING   -->LOCAL GITHUB TOOL        -->GIT PUSH ORIGIN MAIN
+
+
+LOCAL GIT REPOSITORY --> SAVE  THE STAGGED CHANGES IN YOUR LOCAL REPO
+
+
+
+// ASSIGNMENT 
+1 CREATE ACCOUNT --> 
+2 CREATE REPO 
+3 ADD FILES TO REPO 
+4 UPDATE THE FILE 
+

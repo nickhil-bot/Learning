@@ -1,0 +1,12 @@
+git stash --> this help you to temporaliy remove the changes you have made for allowing to work on another task
+
+git stash applay --> this helps you to bring back all the changes that are stash away 
+
+git pop --->restore changes and remove them from the stash list.use this most of the time
+
+git cherry-pic commitid  --> this commands hepls you to copy changes from one branch to another branch
+
+git cherry-pic --abort --> this commands will stop the copy of the changes 
+
+gir show commit-id --> show the details information about the commit
+

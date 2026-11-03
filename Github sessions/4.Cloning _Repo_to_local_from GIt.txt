@@ -1,0 +1,29 @@
+
+// to clone the git Repo to local below are the steps
+
+1.go to repo url
+2.click on the Green Code button 
+3.copy the url
+4.go to local any folder were we want to clone
+5.Right clcik --> click on Show more option --> slect on git bash here (it will open the Termial of git)
+  OR click on Address Bar and enter CMD 
+6.type ' git clone -url '
+-------------------------------------------------------------------------------------
+
+
+pushing single and multiple file 
+git add  --> add one file to staging 
+git add. --> add all the updating to stagging
+-------------------------------------------------------------------------------------
+
+//gitignore --> this fill will permantely ignor the file path added to this file
+
+//how to add a file to git ignore
+step 1 create a file name .gitignore --> where to create were your .git folder is present
+step 2 how to add the file to .gitignore --> just add he file name or file path to gitignore
+--------------------------------------------------------------------------------------
+
+//question-
+if there is a file which is already uploaded on github and if I want to add thet file on gitignore will it 
+remove the file github
+---gitignor will only ignore the untracked or unpublished file 

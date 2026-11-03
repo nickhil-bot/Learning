@@ -1,0 +1,45 @@
+topic for the day--> understing commands sucha as git pull and git fetch and the difference and then theoty of branch
+
+//commands
+
+******
+//git pull origin main --> This commands download and merges the update changes into your cloned Repo
+
+//when to use it????
+1.Befor starting to code 
+
+----------------------------------------
+
+******
+//git featch --> this commands is used to download the latest meta-data from repo
+
+//When to use it????
+1.at the very first use git fetch before git pull origin main
+//this is used only for branching
+
+-------------------------------------------
+
+//Branching------>
+
+//suppose 100 people are working on same 
+--everyone is pushing and pulling at ramdom
+#means for eg. 
+user1 make the create file name chenges.txt and push to main branch
+user2 without pulling again create the same file add this changes and push the main
+
+issue---
+
+then will 2 files named changes and both will have differenct changes 
+
+now if user3 will see this file with same name 
+--he will delect a file and puch the changes
+
+here, the work of someone form 1 and 2 is wasted or lost 
+--So solution will be to add a review layer 
+******we create a pull request 
+
+//now if I sumbit my task for reviewer and i need to start new task 
+so for this we will use 
+
+******Branching--> this will create a copy of main branch and the changes in that will not affect the main branch 
+note-we can create unimated no of branching 

@@ -1,0 +1,19 @@
+//case 1
+
+created a branch --> changes added  --> commit --> push --> changes password is displayed (open api key)  --> commit
+git reset hard - commit
+
+//case 2
+
+created a branch --> changes added --> commit 1 -->push working fine --> commit 2 -->broken system --> commit 1
+git revert commit
+
+
+steps for using git rest --hard commit id
+
+1. go to github or in logs get the commit id you need to go back your branch temporaliy
+2. hit git reset --hard commitid
+3. now changes are gone
+4. git add. 
+5. git commit -m "commit name" 
+6. git push origin branchname -f  -->force push 
